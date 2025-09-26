@@ -15,10 +15,14 @@
     ```
   - Open the local URL printed by Vite (typically http://localhost:5173).
 - Mobile: This project is web‑only; no native mobile builds are provided.
-  
+
+## Screenshots
+
+![Daily Quiz Screenshot](https://user-images.githubusercontent.com/.../image.png)
+
 ## Demo Video
 
-[![Watch the demo](https://img.youtube.com/vi/upC0CYkDhro/0.jpg)](https://youtu.be/upC0CYkDhro)
+[![Watch the demo]](https://youtu.be/upC0CYkDhro)
 
 
 Optional (live AI questions):
