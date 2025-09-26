@@ -1,0 +1,204 @@
+/* Fonts (loaded from Google Fonts). Safe if offline: falls back to system serif */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* Subtle paper texture via layered gradients */
+.newsprint-bg {
+  --paper: #f7f3e9;
+  --ink: #1c1a19;
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(rgba(0,0,0,0.035) 1px, transparent 1px),
+    radial-gradient(rgba(0,0,0,0.025) 1px, transparent 1px);
+  background-size: 20px 20px, 12px 12px;
+  background-position: 0 0, 8px 8px;
+  color: var(--ink);
+}
+
+.newspaper-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.masthead {
+  font-family: 'Cinzel', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  text-align: center;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: clamp(28px, 6vw, 56px);
+  color: #111;
+}
+
+.masthead .rule {
+  margin: 10px auto 10px;
+  width: min(92%, 900px);
+  height: 2px;
+  background: repeating-linear-gradient(90deg, #111, #111 12px, transparent 12px, transparent 18px);
+}
+
+.headline {
+  font-family: 'Lora', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 12px auto 22px;
+  font-size: clamp(16px, 2.5vw, 22px);
+  letter-spacing: 0.04em;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.news-card {
+  grid-column: span 6;
+  background: #fbf8f0;
+  border: 1.5px solid #1f2937;
+  border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.3), 0 6px 18px rgba(0,0,0,0.05);
+  padding: 16px;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease;
+  color: #111827;
+}
+
+.news-card:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, rgba(0,0,0,0.03), rgba(0,0,0,0.03) 1px, transparent 1px, transparent 10px);
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.news-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.4), 0 12px 24px rgba(0,0,0,0.08);
+}
+
+.news-card h3 {
+  margin: 0 0 8px 0;
+  font-family: 'Lora', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.news-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+@media (max-width: 900px) {
+  .news-card { grid-column: span 6; }
+}
+
+@media (max-width: 640px) {
+  .news-card { grid-column: span 12; }
+}
+
+.news-divider {
+  height: 1px;
+  background: repeating-linear-gradient(90deg, #111, #111 10px, transparent 10px, transparent 16px);
+  margin: 18px 0;
+}
+
+.blurb {
+  grid-column: span 3;
+  font-family: 'Lora', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 13px;
+  color: #1f2937;
+  background: #faf7ef;
+  border: 1px dashed #1f2937;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+@media (max-width: 900px) {
+  .blurb { grid-column: span 6; }
+}
+
+@media (max-width: 640px) {
+  .blurb { grid-column: span 12; }
+}
+
+/* Loading animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ticker {
+  from {
+    opacity: 0.7;
+    transform: translateX(-50%) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.02);
+  }
+}
+
+
+/* Puzzle / question styles */
+.puzzle-box {
+  background: #fbf8f0;
+  border: 1px dashed #111;
+  border-radius: 8px;
+  position: relative;
+  padding: 16px;
+}
+.puzzle-box:after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1px dotted #111;
+  border-radius: 6px;
+  pointer-events: none;
+}
+.puzzle-title {
+  font-family: 'Cinzel', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 4px 0 12px 0;
+}
+.puzzle-option {
+  color: #111;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #fffdfa;
+  border: 1px solid #1f2937;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 120ms ease, transform 120ms ease, box-shadow 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+.puzzle-option:hover { background: #f2efe6; }
+.puzzle-option.selected { background: #ece7db; box-shadow: inset 0 0 0 1px #1f2937; }
+.puzzle-option.correct { background: #e8f7ea; border-color: #16a34a; color: #065f46; }
+.puzzle-option.wrong { background: #fdeaea; border-color: #dc2626; color: #7f1d1d; }
+.puzzle-prefix {
+  font-family: 'Cinzel', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 800;
+  min-width: 28px;
+}
+.puzzle-note {
+  font-family: 'Lora', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
