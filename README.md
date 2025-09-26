@@ -100,10 +100,10 @@ Frontend stack: React 18, TypeScript, Vite.
 
 ## 5. Screenshots / Screen Recording
 
-- Home / Topic Picker: `![home](./screenshots/home.png)`
-- Loading: `![loading](./screenshots/loading.png)`
-- Quiz Question: `![quiz](./screenshots/quiz.png)`
-- Results: `![results](./screenshots/results.png)`
+- Home / Topic Picker: ![home](./screenshots/home.png)
+- Loading: ![loading](./screenshots/loading.png)
+- Quiz Question: ![quiz](./screenshots/quiz.png)
+- Results: ![results](./screenshots/results.png)
 - Demo Video: `[Watch Demo](https://example.com/demo)`
 
 Add real images/links once captured or deployed.
