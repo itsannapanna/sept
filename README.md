@@ -15,12 +15,16 @@
     ```
   - Open the local URL printed by Vite (typically http://localhost:5173).
 - Mobile: This project is web‑only; no native mobile builds are provided.
-- Demo: Add a hosted link or a short screen recording here once deployed.
+  
+## Demo Video
+
+[![Watch the demo](https://img.youtube.com/vi/upC0CYkDhro/0.jpg)](https://youtu.be/upC0CYkDhro)
+
 
 Optional (live AI questions):
 - Create `.env` in the project root and set:
   ```
-  VITE_GEMINI_API_KEY=your_api_key_here
+  VITE_GEMINI_API_KEY=AIzaSyDlh02kw66da6iKqs15BqHksJtpEH90leI
   ```
   Without a key, the app uses mock questions so you can demo end‑to‑end.
 
