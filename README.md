@@ -16,7 +16,7 @@
   - Open the local URL printed by Vite (typically http://localhost:5173).
 - Mobile: This project is web‑only; no native mobile builds are provided.
 
-## Demo Video
+## Demo Video(click on the image to play the whole video)
 
 [![Watch the demo](https://img.youtube.com/vi/upC0CYkDhro/0.jpg)](https://youtu.be/upC0CYkDhro)
 
