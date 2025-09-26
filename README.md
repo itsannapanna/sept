@@ -18,11 +18,12 @@
 
 ## Screenshots
 
-![Daily Quiz Screenshot](https://user-images.githubusercontent.com/.../image.png)
+![Daily Quiz Screenshot](https://github.com/itsannapanna/sept/issues/1#issue-3457727004)
+
 
 ## Demo Video
 
-[![Watch the demo]](https://youtu.be/upC0CYkDhro)
+[![Watch the demo](https://img.youtube.com/vi/upC0CYkDhro/0.jpg)](https://youtu.be/upC0CYkDhro)
 
 
 Optional (live AI questions):
