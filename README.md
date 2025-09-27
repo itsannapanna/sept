@@ -48,18 +48,8 @@ During development, AI (via Cursor + Gemini) was used to:
 - Generate quiz questions (JSON structure with one correct answer and 3 distractors).
 - Refine copy and topic subtexts to match the newspaper voice.
 
-Example – initial prompt (for questions):
-```text
-Create 5 multiple‑choice questions about the topic "AI" in valid JSON with fields: id, text, options[4], correctOptionId. Make questions fact‑based and clear.
-```
-
-Refined prompt (after validation issues):
-```text
-You are a quiz generator. Create 5 MCQs for topic "AI".
-Return ONLY JSON with shape:
-{ "questions": [{ "id": "q1", "text": "...", "options": [{"id":"o1","text":"..."}, ...], "correctOptionId": "oX" }] }
-Rules: exactly 4 options; one correct; no commentary; IDs like q1/o1.
-```
+##  Detailed Prompt Docs
+You can read the full Google Doc [here](https://docs.google.com/document/d/1CDnvE5poBviVgWajoj9g8VYSoBz72b6mgylj09yV-DM/edit?usp=sharing).
 
 How outputs are used:
 - Responses are parsed in `aiService.ts` and normalized in `quizService.ts`. Invalid or empty responses cause a controlled error, triggering fallbacks or error UI.
