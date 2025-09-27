@@ -48,8 +48,8 @@ During development, AI (via Cursor + Gemini) was used to:
 - Generate quiz questions (JSON structure with one correct answer and 3 distractors).
 - Refine copy and topic subtexts to match the newspaper voice.
 
-##  Detailed Prompt Docs
-You can read the full Google Doc [here](https://docs.google.com/document/d/1CDnvE5poBviVgWajoj9g8VYSoBz72b6mgylj09yV-DM/edit?usp=sharing).
+     ##  Detailed Prompt Docs
+     You can read the full Google Doc [here](https://docs.google.com/document/d/1CDnvE5poBviVgWajoj9g8VYSoBz72b6mgylj09yV-DM/edit?usp=sharing).
 
 How outputs are used:
 - Responses are parsed in `aiService.ts` and normalized in `quizService.ts`. Invalid or empty responses cause a controlled error, triggering fallbacks or error UI.
