@@ -21,12 +21,12 @@
 [![Watch the demo](https://img.youtube.com/vi/upC0CYkDhro/0.jpg)](https://youtu.be/upC0CYkDhro)
 
 
-Optional (live AI questions):
+<!-- Optional (live AI questions):
 - Create `.env` in the project root and set:
   ```
   VITE_GEMINI_API_KEY=AIzaSyDlh02kw66da6iKqs15BqHksJtpEH90leI
   ```
-  Without a key, the app uses mock questions so you can demo end‑to‑end.
+  Without a key, the app uses mock questions so you can demo end‑to‑end. -->
 
 ---
 
